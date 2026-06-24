@@ -47,8 +47,8 @@ const ServicesCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="cursor-pointer" />
+        <CarouselNext className="cursor-pointer" />
       </Carousel>
     </div>
   )

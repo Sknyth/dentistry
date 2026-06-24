@@ -1,12 +1,13 @@
 import { Clock, Globe, Phone } from 'lucide-react'
 import Image from 'next/image'
 import BurgerMenu from './BurgerMenu'
+import Link from 'next/link'
 
 const Header = () => {
   return (
     <header id="header" className="@container text-white p-4 justify-between shrink-0 flex items-center gap-5 relative">
       <div className="flex-1 items-center justify-between">
-        <a href=""><Image src="/logo.png" alt="Logo" width={280} height={200} /></a>
+        <Link href="/"><Image src="/logo.png" alt="Logo" width={280} height={200} /></Link>
       </div>
 
 			<div className="clock flex-1 flex gap-3 items-center justify-center">

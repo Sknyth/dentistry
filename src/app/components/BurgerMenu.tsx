@@ -4,13 +4,13 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/s
 import { Menu } from 'lucide-react'
 
 const links = [
-  { href: '#echipa', label: 'Echipa' },
-  { href: '#servicii', label: 'Servicii' },
-  { href: '#avantaje', label: 'Avantaje' },
-  { href: '#map', label: 'Hartă' },
-  { href: '#consultatie', label: 'Consultație' },
-  { href: '#', label: 'Prețuri' },
-  { href: '#', label: 'Contact' },
+  { href: '/#echipa', label: 'Echipa' },
+  { href: '/#servicii', label: 'Servicii' },
+  { href: '/#avantaje', label: 'Avantaje' },
+  { href: '/#map', label: 'Hartă' },
+  { href: '/#consultatie', label: 'Consultație' },
+  { href: '/#', label: 'Prețuri' },
+  { href: '/#', label: 'Contact' },
 ]
 
 const BurgerMenu = () => {

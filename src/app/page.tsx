@@ -1,7 +1,8 @@
 import { Hospital, Hourglass, Mail, MapPin, Phone, ShieldCheck, Users } from 'lucide-react'
 import Image from 'next/image'
-import Carousel from './components/Carousel'
+import Carousel from './components/CarouselServices'
 import InfoBox from './components/InfoBox'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -17,9 +18,9 @@ export default function Home() {
           <p className="text-gray-800 text-lg mb-8">
             Clinica noastră este un spațiu modern, dedicat excelenței în medicina dentară, având o echipă de medici specialiști pasionați și tehnologie de ultimă generație. Ne asigurăm că fiecare vizită este complet fără durere, sigură și confortabilă pentru tine și familia ta.
           </p>
-          <button className="bg-[#8900F2] hover:bg-[#7000cc] text-white text-xl font-semibold px-12 py-5 rounded-2xl transition-colors cursor-pointer">
+          <Link href="/about" className="bg-[#8900F2] hover:bg-[#7000cc] text-white text-xl font-semibold px-12 py-5 rounded-2xl transition-colors cursor-pointer">
             Vezi mai mult...
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -78,7 +79,7 @@ export default function Home() {
             <div className="text-[#8900F2] items-center gap-2 flex">
               <Mail width={20} height={20} />
               <a href="" className="text-xl font-semibold">
-                Dentistry@gmail.com
+                dentistry@gmail.com
               </a>
             </div>
           </div>
