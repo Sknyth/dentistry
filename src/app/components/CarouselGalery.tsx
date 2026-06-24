@@ -1,11 +1,11 @@
-import Image from 'next/image'
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
 } from "@/components/ui/carousel"
+import Image from 'next/image'
 
 const galery = [
   {
@@ -39,7 +39,13 @@ const CarouselGalery = () => {
           {galery.map((g) => (
             <CarouselItem key={g.id} className="md:basis-1/3">
               <div className="bg-white rounded-2xl p-4">
-                <Image src={g.img} alt="image" width={300} height={200} className="rounded-xl w-full object-cover" />
+                <Image
+									src={g.img}
+									alt="image"
+									width={500}
+									height={350}
+									className="rounded-xl w-full h-[350px] object-cover"
+								/>
               </div>
             </CarouselItem>
           ))}

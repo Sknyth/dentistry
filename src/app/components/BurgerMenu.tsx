@@ -10,7 +10,7 @@ const links = [
   { href: '/#map', label: 'Hartă' },
   { href: '/#consultatie', label: 'Consultație' },
   { href: '/#', label: 'Prețuri' },
-  { href: '/#', label: 'Contact' },
+  { href: '/#footer', label: 'Contact' },
 ]
 
 const BurgerMenu = () => {

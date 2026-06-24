@@ -30,9 +30,9 @@ export default function Home() {
           <p className="text-lg mt-4">
             Echipa noastră de medici specialiști este dedicată să ofere cele mai bune tratamente dentare, combinând experiența cu tehnologia de ultimă generație. Fiecare pacient este tratat cu atenție și profesionalism, asigurându-ne că fiecare vizită este o experiență pozitivă și confortabilă.
           </p>
-          <button className="mt-8 bg-white text-[#8900F2] font-semibold text-lg px-8 py-4 rounded-2xl hover:bg-gray-100 transition-colors cursor-pointer">
+          <Link href="/doctors" className="mt-8 bg-white text-[#8900F2] font-semibold text-lg px-8 py-4 rounded-2xl hover:bg-gray-100 transition-colors cursor-pointer">
             Fă cunoștință cu medicii noștri
-          </button>
+          </Link>
         </div>
         <div className="w-1/2 relative min-h-[700px]">
           <Image

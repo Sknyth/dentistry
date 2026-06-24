@@ -12,7 +12,7 @@ const Header = () => {
 
 			<div className="clock flex-1 flex gap-3 items-center justify-center">
 				<Clock width={40} height={40} />
-				<div>
+				<div className="flex flex-col font-semibold text-center">
 					<span>MON - FRI</span>
 					<hr />
 					<span className="opacity-70">9:00 AM - 5:00 PM</span>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function Footer() {
   return (
-    <footer className="bg-[#2563EB] text-white">
+    <footer id="footer" className="bg-[#2563EB] text-white">
       <section className="flex flex-col md:flex-row items-start justify-between gap-8 max-w-6xl mx-auto py-12 px-4">
         <div className="flex-1 flex items-start justify-start">
           <a href=""><Image src="/logo.png" alt="Logo" width={280} height={200} /></a>
