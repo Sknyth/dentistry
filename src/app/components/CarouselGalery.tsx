@@ -50,8 +50,8 @@ const CarouselGalery = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="cursor-pointer" />
-        <CarouselNext className="cursor-pointer" />
+        <CarouselPrevious className="cursor-pointer w-10 h-10 md:w-8 md:h-8" />
+<CarouselNext className="cursor-pointer w-10 h-10 md:w-8 md:h-8" />
       </Carousel>
     </div>
   )

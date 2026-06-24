@@ -37,18 +37,20 @@ const ServicesCarousel = () => {
       <Carousel className="max-w-5xl mx-auto" opts={{ loop: true }}>
         <CarouselContent>
           {services.map((service) => (
-            <CarouselItem key={service.title} className="md:basis-1/3">
-              <div className="bg-white rounded-2xl p-4">
-                <Image src={service.img} alt={service.title} width={300} height={200} className="rounded-xl w-full object-cover" />
+            <CarouselItem key={service.title} className="basis-full sm:basis-1/2 md:basis-1/3">
+              <div className="bg-white rounded-2xl p-4 h-full flex flex-col">
+                <Image src={service.img} alt={service.title} width={300} height={180} className="rounded-xl w-full h-[180px] object-cover" />
                 <h3 className="font-bold mt-3">{service.title}</h3>
-                <p className="text-sm text-gray-500">{service.desc}</p>
+                <p className="text-sm text-gray-500 mt-1 flex-1">{service.desc}</p>
                 <a href="#" className="text-[#8900F2] font-medium mt-2 inline-block">Info →</a>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="cursor-pointer" />
-        <CarouselNext className="cursor-pointer" />
+        <div className="flex justify-center gap-4 mt-6">
+          <CarouselPrevious className="cursor-pointer static translate-y-0 w-10 h-10 md:w-8 md:h-8" />
+          <CarouselNext className="cursor-pointer static translate-y-0 w-10 h-10 md:w-8 md:h-8" />
+        </div>
       </Carousel>
     </div>
   )

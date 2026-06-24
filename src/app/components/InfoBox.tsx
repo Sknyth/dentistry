@@ -36,10 +36,12 @@ function InfoBox({ title, value, suffix = '', children }: InfoBoxProps) {
   }, [started, value])
 
   return (
-    <div ref={ref} className="bg-[#8900F2] text-white p-14 rounded-2xl flex flex-col justify-between gap-4 text-center relative min-h-[200px]">
-      <div className="absolute top-4 right-4">{children}</div>
-      <h1 className="font-bold text-4xl">{title}</h1>
-      <p className="font-bold text-3xl">{count.toLocaleString()}{suffix}</p>
+    <div ref={ref} className="bg-[#8900F2] text-white p-8 md:p-14 rounded-2xl flex flex-col justify-between gap-4 text-center relative min-h-[160px] md:min-h-[200px]">
+      <div className="absolute top-4 right-6">
+        <div className="w-8 h-8 md:w-12 md:h-12">{children}</div>
+      </div>
+      <h1 className="font-bold text-2xl md:text-4xl">{title}</h1>
+      <p className="font-bold text-2xl md:text-3xl">{count.toLocaleString()}{suffix}</p>
     </div>
   )
 }

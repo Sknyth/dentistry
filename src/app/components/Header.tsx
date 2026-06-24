@@ -1,46 +1,45 @@
 import { Clock, Globe, Phone } from 'lucide-react'
 import Image from 'next/image'
-import BurgerMenu from './BurgerMenu'
 import Link from 'next/link'
+import BurgerMenu from './BurgerMenu'
 
 const Header = () => {
   return (
-    <header id="header" className="@container text-white p-4 justify-between shrink-0 flex items-center gap-5 relative">
-      <div className="flex-1 items-center justify-between">
+    <header id="header" className="text-white px-4 md:px-8 py-4 flex items-center justify-between relative overflow-visible">
+      
+      <div className="flex items-center shrink-0">
         <Link href="/"><Image src="/logo.png" alt="Logo" width={280} height={200} /></Link>
       </div>
 
-			<div className="clock flex-1 flex gap-3 items-center justify-center">
-				<Clock width={40} height={40} />
-				<div className="flex flex-col font-semibold text-center">
-					<span>MON - FRI</span>
-					<hr />
-					<span className="opacity-70">9:00 AM - 5:00 PM</span>
-				</div>
-			</div>
+      <div className="hidden sm:flex gap-3 items-center">
+        <Clock width={36} height={36} />
+        <div className="flex flex-col font-semibold text-center text-sm">
+          <span>MON - FRI</span>
+          <hr />
+          <span className="opacity-70">9:00 AM - 5:00 PM</span>
+        </div>
+      </div>
 
-			<div className="location flex-1 flex gap-2 items-center justify-center">
-        <div className="flex items-center gap-2">
+      <div className="flex items-center gap-3">
+        <div className="hidden sm:flex items-center gap-2">
           <Globe width={20} height={20} />
-          <select className="bg-transparent text-white text-lg font-semibold focus:outline-none cursor-pointer">
-            <option value="Chisinau">Română</option>
-            <option value="Moscow">Русский</option>
-            <option value="English">English</option>
+          <select className="bg-transparent text-white font-semibold focus:outline-none cursor-pointer text-sm">
+            <option value="ro">Română</option>
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
           </select>
         </div>
+        <hr className="hidden md:block border-white border-l-2 h-6" />
+        <BurgerMenu />
+      </div>
 
-        <hr className="border-white border-l-2 h-6 mx-2" />
-        <div className="flex items-center gap-2">
-          <BurgerMenu />
-        </div>
-        <a
+      <a
         href="tel:+37369123456"
-        className="absolute right-30 -bottom-8 flex items-center gap-3 rounded-full bg-[#8900F2] px-8 py-4 text-xl font-medium text-white shadow-lg transition-colors hover:bg-[#8900d8] whitespace-nowrap"
+        className="hidden sm:flex absolute right-8 -bottom-7 items-center gap-3 rounded-full bg-[#8900F2] px-6 py-3 text-lg font-medium text-white shadow-lg transition-colors hover:bg-[#8900d8] whitespace-nowrap z-10"
       >
-        <Phone width={28} height={28} />
+        <Phone width={24} height={24} />
         +373 69 123 456
       </a>
-      </div>
     </header>
   )
 }
