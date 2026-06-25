@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Doctor {
+  id           Int           @id @default(autoincrement())
+  name         String
+  desc         String
+  image        String
+  appointments Appointment[]
+}
+
+model Appointment {
+  id           Int      @id @default(autoincrement())
+  doctorId     Int
+  doctor       Doctor   @relation(fields: [doctorId], references: [id])
+  patientName  String
+  patientPhone String
+  patientEmail String
+  message      String?
+  date         DateTime?
+  status       String   @default("pending")
+  createdAt    DateTime @default(now())
+}
