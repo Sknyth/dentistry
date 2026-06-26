@@ -15,7 +15,7 @@ html {
 
 header {
   background: #2563EB;
-  height: 110px;
+  min-height: 110px;
   border-bottom: 5px solid #8900F2;
 }
 

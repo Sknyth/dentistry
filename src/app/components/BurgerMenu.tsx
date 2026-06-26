@@ -17,7 +17,7 @@ const BurgerMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <button className="cursor-pointer p-2 rounded-md hover:bg-[#2A3ED8] transition-colors">
+        <button className="cursor-pointer rounded-md hover:bg-[#2A3ED8] transition-colors">
           <Menu className="w-8 h-8 text-white" />
         </button>
       </SheetTrigger>
