@@ -53,7 +53,7 @@ export default async function DoctorPage({ params }: { params: Promise<{ id: str
 
       <section className="flex flex-col gap-4 items-center justify-center border-2 border-[#8900F2] p-8 md:p-28 rounded-2xl w-full">
         <h2 className="text-2xl md:text-4xl text-[#8900F2] font-bold text-center">Vrei o schimbare?</h2>
-        <Link href="#" className="bg-[#8900F2] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-2xl hover:bg-[#7000cc] transition-colors w-fit">
+        <Link href={`/doctors/${id}/book`} className="bg-[#8900F2] text-white font-semibold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-2xl hover:bg-[#7000cc] transition-colors w-fit">
           Programează-te
         </Link>
       </section>

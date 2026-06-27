@@ -18,14 +18,15 @@ model Doctor {
 }
 
 model Appointment {
-  id           Int      @id @default(autoincrement())
+  id           Int       @id @default(autoincrement())
   doctorId     Int
-  doctor       Doctor   @relation(fields: [doctorId], references: [id])
+  doctor       Doctor    @relation(fields: [doctorId], references: [id])
   patientName  String
   patientPhone String
   patientEmail String
+  procedure    String
   message      String?
   date         DateTime?
-  status       String   @default("pending")
-  createdAt    DateTime @default(now())
+  status       String    @default("pending")
+  createdAt    DateTime  @default(now())
 }
