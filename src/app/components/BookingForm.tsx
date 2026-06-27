@@ -4,6 +4,7 @@ import { useState, useActionState } from 'react'
 import { createAppointment } from '@/app/actions/appointment'
 import BookingSelects from './BookingSelects'
 import TimePicker from './TimePicker'
+import { useSearchParams } from 'next/navigation'
 
 interface Doctor {
   id: number
@@ -21,8 +22,13 @@ export default function BookingForm({ doctors, defaultDoctorId, bookedSlots }: P
   const [date, setDate] = useState<string>('')
   const [time, setTime] = useState<string>('')
   const [doctorId, setDoctorId] = useState<number>(defaultDoctorId)
-  const [procedure, setProcedure] = useState<string>('')
+  // const [procedure, setProcedure] = useState<string>('')
   const [state, formAction] = useActionState<{ error: string } | null, FormData>(createAppointment, null)
+
+  const searchParams = useSearchParams()
+  const defaultProcedure = searchParams.get('procedure') || ''
+
+  const [procedure, setProcedure] = useState<string>(defaultProcedure)
 
   return (
     <form action={formAction} className="flex flex-col gap-5 w-full">
@@ -41,6 +47,7 @@ export default function BookingForm({ doctors, defaultDoctorId, bookedSlots }: P
       <BookingSelects
         doctors={doctors}
         defaultDoctorId={defaultDoctorId}
+        defaultProcedure={defaultProcedure}
         onDoctorChange={setDoctorId}
         onProcedureChange={setProcedure}
       />

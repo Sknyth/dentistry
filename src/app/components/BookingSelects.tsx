@@ -16,9 +16,10 @@ interface Props {
   defaultDoctorId: number
   onDoctorChange?: (id: number) => void
   onProcedureChange?: (procedure: string) => void
+  defaultProcedure?: string
 }
 
-export default function BookingSelects({ doctors, defaultDoctorId, onDoctorChange, onProcedureChange }: Props) {
+export default function BookingSelects({ doctors, defaultDoctorId, defaultProcedure, onDoctorChange, onProcedureChange }: Props) {
   const [selectedDoctorId, setSelectedDoctorId] = useState(String(defaultDoctorId))
 
   const selectedDoctor = doctors.find(d => d.id === parseInt(selectedDoctorId))
@@ -49,8 +50,8 @@ export default function BookingSelects({ doctors, defaultDoctorId, onDoctorChang
 
       <div className="flex flex-col gap-1.5">
         <label className="text-sm font-medium text-gray-700">Procedura</label>
-        <Select onValueChange={(val) => onProcedureChange?.(val)}>
-          <SelectTrigger className="w-full border-[#8900F2]/40 hover:border-[#8900F2]">
+        <Select defaultValue={defaultProcedure} onValueChange={(val) => onProcedureChange?.(val)}>
+          <SelectTrigger className="w-full border-[#8900F2]/40 hover:border-[#8900F2] overflow-hidden h-10">
             <SelectValue placeholder="Alege procedura" />
           </SelectTrigger>
           <SelectContent>
