@@ -98,7 +98,7 @@ export default function BookingForm({ doctors, defaultDoctorId, bookedSlots }: P
         </label>
       </div>
 
-      <button type="submit" className="w-full bg-[#8900F2] hover:bg-[#7a00d8] transition-colors text-white font-medium py-2.5 rounded-lg text-sm">
+      <button type="submit" className="w-full bg-[#8900F2] hover:bg-[#7a00d8] transition-colors text-white font-medium py-2.5 rounded-lg text-sm cursor-pointer">
         Trimite programarea
       </button>
 

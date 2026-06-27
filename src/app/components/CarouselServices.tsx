@@ -42,7 +42,7 @@ const ServicesCarousel = () => {
                 <Image src={service.img} alt={service.title} width={300} height={180} className="rounded-xl w-full h-[180px] object-cover" />
                 <h3 className="font-bold mt-3">{service.title}</h3>
                 <p className="text-sm text-gray-500 mt-1 flex-1">{service.desc}</p>
-                <a href="#" className="text-[#8900F2] font-medium mt-2 inline-block">Info →</a>
+                <a href="/services" className="text-[#8900F2] font-medium mt-2 inline-block">Info →</a>
               </div>
             </CarouselItem>
           ))}
