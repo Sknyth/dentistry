@@ -2,18 +2,26 @@
 
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Menu } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import LangSwitcher from './LangSwitcher'
 
-const links = [
-  { href: '/#echipa', label: 'Echipa' },
-  { href: '/#servicii', label: 'Servicii' },
-  { href: '/#avantaje', label: 'Avantaje' },
-  { href: '/#map', label: 'Hartă' },
-  { href: '/#consultatie', label: 'Consultație' },
-  { href: '/#', label: 'Prețuri' },
-  { href: '/#footer', label: 'Contact' },
-]
+interface Props {
+  showLang?: boolean
+}
 
-const BurgerMenu = () => {
+export default function BurgerMenu({ showLang = false }: Props) {
+  const t = useTranslations('burger')
+
+  const links = [
+    { href: '/#echipa', label: t('echipa') },
+    { href: '/#servicii', label: t('servicii') },
+    { href: '/#avantaje', label: t('avantaje') },
+    { href: '/#map', label: t('harta') },
+    { href: '/#consultatie', label: t('consultatie') },
+    { href: '/services', label: t('preturi') },
+    { href: '/#footer', label: t('contact') },
+  ]
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -26,7 +34,10 @@ const BurgerMenu = () => {
         className="bg-[#2563EB] text-white border-none"
         onCloseAutoFocus={(e) => e.preventDefault()}
       >
-        <p className="text-2xl font-bold px-4 mt-2">Dentistry</p>
+        <div className="flex items-center justify-between px-4 mt-10">
+          <p className="text-2xl font-bold">Dentistry</p>
+          {showLang && <LangSwitcher />}
+        </div>
         <nav className="flex flex-col mt-8 px-2">
           {links.map(({ href, label }) => (
             <SheetClose asChild key={href}>
@@ -43,5 +54,3 @@ const BurgerMenu = () => {
     </Sheet>
   )
 }
-
-export default BurgerMenu

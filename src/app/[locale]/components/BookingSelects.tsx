@@ -4,6 +4,9 @@ import { useState } from 'react'
 import {
   Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 } from '@/components/ui/select'
+import { useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
+import { translateProcedure } from '@/lib/procedureTranslations'
 
 interface Doctor {
   id: number
@@ -20,6 +23,8 @@ interface Props {
 }
 
 export default function BookingSelects({ doctors, defaultDoctorId, defaultProcedure, onDoctorChange, onProcedureChange }: Props) {
+  const t = useTranslations('booking')
+  const locale = useLocale()
   const [selectedDoctorId, setSelectedDoctorId] = useState(String(defaultDoctorId))
 
   const selectedDoctor = doctors.find(d => d.id === parseInt(selectedDoctorId))
@@ -33,10 +38,10 @@ export default function BookingSelects({ doctors, defaultDoctorId, defaultProced
   return (
     <>
       <div className="flex flex-col gap-1.5">
-        <label className="text-sm font-medium text-gray-700">Doctor</label>
+        <label className="text-sm font-medium text-gray-700">{t('doctor')}</label>
         <Select value={selectedDoctorId} onValueChange={handleDoctorChange}>
           <SelectTrigger className="w-full border-[#8900F2]/40 hover:border-[#8900F2]">
-            <SelectValue placeholder="Alege doctorul" />
+            <SelectValue placeholder={t('doctor')} />
           </SelectTrigger>
           <SelectContent>
             {doctors.map(doc => (
@@ -49,14 +54,16 @@ export default function BookingSelects({ doctors, defaultDoctorId, defaultProced
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-sm font-medium text-gray-700">Procedura</label>
+        <label className="text-sm font-medium text-gray-700">{t('procedure')}</label>
         <Select defaultValue={defaultProcedure} onValueChange={(val) => onProcedureChange?.(val)}>
           <SelectTrigger className="w-full border-[#8900F2]/40 hover:border-[#8900F2] overflow-hidden h-10">
-            <SelectValue placeholder="Alege procedura" />
+            <SelectValue placeholder={t('procedure')} />
           </SelectTrigger>
           <SelectContent>
             {selectedDoctor?.procedures.map((pr, index) => (
-              <SelectItem key={index} value={pr}>{pr}</SelectItem>
+              <SelectItem key={index} value={pr}>
+                {translateProcedure(pr, locale)}
+              </SelectItem>
             ))}
           </SelectContent>
         </Select>

@@ -1,0 +1,157 @@
+{
+  "hero": {
+    "title": "Your smile deserves the best care!",
+    "desc": "Our clinic is a modern space dedicated to excellence in dentistry, with a team of passionate specialists and cutting-edge technology. We ensure every visit is completely painless, safe and comfortable for you and your family.",
+    "btn": "Learn more..."
+  },
+  "team": {
+    "title": "The team that takes care of your smile!",
+    "desc": "Our team of specialists is dedicated to providing the best dental treatments, combining experience with the latest technology. Every patient is treated with care and professionalism.",
+    "btn": "Meet our doctors"
+  },
+  "stats": {
+    "patients": "Patients",
+    "doctors": "Specialist doctors",
+    "years": "Years of excellence",
+    "success": "Success rate or painless interventions"
+  },
+  "contact": {
+    "title": "Schedule a consultation",
+    "desc": "Fill out the form below and our team will contact you to schedule a convenient appointment.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "btn": "Send"
+  },
+  "nav": {
+    "echipa": "Team",
+    "servicii": "Services",
+    "avantaje": "Advantages",
+    "contact": "Contact"
+  },
+  "services": {
+    "offers": "Offers",
+    "prices": "Prices",
+    "bookBtn": "Book now",
+    "colService": "Service",
+    "colPrice": "Price"
+  },
+  "burger": {
+    "echipa": "Team",
+    "servicii": "Services",
+    "avantaje": "Advantages",
+    "harta": "Map",
+    "consultatie": "Consultation",
+    "preturi": "Prices",
+    "contact": "Contact"
+  },
+  "footer": {
+    "info": "Information",
+    "general": "General",
+    "contacts": "Contacts",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy policy",
+    "terms": "Terms and conditions",
+    "cookies": "Cookie policy",
+    "security": "Security policy",
+    "accreditation": "Accreditation certificate",
+    "services": "Services",
+    "offers": "Offers",
+    "prices": "Prices",
+    "doctors": "Doctors"
+  },
+  "booking": {
+    "title": "Online booking",
+    "desc": "Fill out the form to book an appointment at the clinic",
+    "doctor": "Doctor",
+    "procedure": "Procedure",
+    "date": "Date",
+    "time": "Time",
+    "name": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message",
+    "messageOptional": "(optional)",
+    "policy1": "I agree with the clinic's cancellation policy.",
+    "policy2": "I agree with the privacy policy.",
+    "btn": "Submit booking",
+    "chooseDate": "Choose date",
+    "chooseTime": "Choose time",
+    "chooseDateFirst": "Choose date first",
+    "noSlots": "No available slots",
+    "error": "This slot is already booked. Please choose another time.",
+    "messagePlaceholder": "Briefly describe your issue..."
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "offers": {
+    "bookBtn": "Book now",
+    "offer1": { "title": "Complete Professional Hygiene Package (Prophylaxis)", "desc": "Includes: ultrasonic scaling, professional brushing and Air-Flow for stain removal." },
+    "offer2": { "title": "Aesthetic Package: Professional Teeth Whitening", "desc": "Includes: complete hygiene, LED whitening session (visible results on the spot)." },
+    "offer3": { "title": "Emergency & Restoration Package: Premium Filling", "desc": "Includes: consultation, local anesthesia and composite filling of the latest generation." },
+    "offer4": { "title": "Dental Implant Package Complete Smile", "desc": "Includes: high quality implant + abutment (primary surgical phase) and digital treatment plan." },
+    "offer5": { "title": "Top Aesthetic: E-MAX Ceramic Veneer", "desc": "Includes: aesthetic consultation, digital simulation (Digital Smile Design) and ceramic veneer application." }
+  },
+  "services_carousel": {
+    "title": "Our services:",
+    "service1": { "title": "Dental Aesthetics & Whitening", "desc": "Professional whitening and premium veneers for a bright and natural smile." },
+    "service2": { "title": "Implantology & Surgery", "desc": "Safe and permanent replacement of missing teeth with top implants." },
+    "service3": { "title": "Children's Dentistry", "desc": "Fear-free visits in a playful environment, specially adapted for their smiles." },
+    "service4": { "title": "Prevention & Hygiene", "desc": "Professional scaling and preventive consultations for lasting oral health." }
+  },
+  "doctors": {
+    "infoBtn": "Learn more",
+    "bookBtn": "Book now",
+    "procedures": "What procedures does the doctor perform?",
+    "cta": "Want a change?"
+  },
+  "header": {
+    "days": "MON - FRI",
+    "hours": "9:00 AM - 5:00 PM"
+  },
+  "prices": {
+    "from": "from",
+    "perTooth": "/ tooth",
+    "cat1": {
+      "title": "Diagnostics & Prevention",
+      "s1": "Primary consultation + Treatment plan",
+      "s2": "Retroalveolar / digital X-ray",
+      "s3": "Complete Hygiene Package (Scaling, Brushing, Airflow)",
+      "s4": "Professional fluoridation (both arches)"
+    },
+    "cat2": {
+      "title": "Odontology (Cavity Treatment)",
+      "s1": "Aesthetic filling - small surface",
+      "s2": "Aesthetic filling - medium/large cavity",
+      "s3": "Tooth reconstruction with fiberglass post",
+      "s4": "Direct/indirect pulp capping (deep cavity protection)"
+    },
+    "cat3": {
+      "title": "Endodontics (Root Canal Treatments)",
+      "s1": "Single-root canal treatment (1 canal)",
+      "s2": "Two-root canal treatment (2 canals)",
+      "s3": "Multi-root canal treatment (3-4 canals)",
+      "s4": "Endodontic retreatment (canal debridement and disinfection)"
+    },
+    "cat4": {
+      "title": "Surgery & Implantology",
+      "s1": "Single-root / simple tooth extraction",
+      "s2": "Wisdom tooth extraction (impacted or semi-impacted)",
+      "s3": "Dental Implant (surgical phase, standard brand)",
+      "s4": "Bone graft / Sinus Lift (bone surgery procedure)"
+    },
+    "cat5": {
+      "title": "Prosthetics & Dental Aesthetics",
+      "s1": "Metal-ceramic crown",
+      "s2": "Zirconia crown (premium aesthetics)",
+      "s3": "Ceramic veneer (E-max)",
+      "s4": "Professional in-office whitening (LED lamp)"
+    }
+  },
+  "about": {
+    "title": "Bun venit la Dentistry – Zâmbetul tău, priorititatea noastră!",
+    "p": "La Dentistry, credem că un zâmbet sănătos are puterea de a schimba vieți. De aceea, am creat mai mult decât o clinică dentară – am construit un spațiu primitor, modern și complet digitalizat, unde sănătatea ta orală este pe mâini sigure. Echipa noastră de medici specialiști combină experiența medicală cu tehnologia de ultimă generație pentru a-ți oferi tratamente personalizate, complet lipsite de durere. Indiferent dacă ai nevoie de o simplă igienizare, de estetică dentară sau de intervenții complexe de chirurgie și implantologie, la noi găsești soluții eficiente, adaptate nevoilor și stilului tău de viață. De ce să alegi Dentistry? Tehnologie de vârf: Diagnostic precis și tratamente rapide datorită aparaturii de ultimă oră. Confort absolut: Ne asigurăm că fiecare vizită este o experiență relaxantă și fără stres. Echipă dedicată: Medici pasionați, pregătiți să îți asculte dorințele și să îți ofere cele mai bune recomandări. Zâmbește cu încredere în fiecare zi! Te așteptăm la Dentistry pentru a începe împreună călătoria către un zâmbet perfect și sănătos."
+  }
+}

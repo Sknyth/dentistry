@@ -1,0 +1,157 @@
+{
+  "hero": {
+    "title": "Zâmbetul tău merită cea mai bună îngrijire!",
+    "desc": "Clinica noastră este un spațiu modern, dedicat excelenței în medicina dentară, având o echipă de medici specialiști pasionați și tehnologie de ultimă generație. Ne asigurăm că fiecare vizită este complet fără durere, sigură și confortabilă pentru tine și familia ta.",
+    "btn": "Vezi mai mult..."
+  },
+  "team": {
+    "title": "Echipa care are grijă de zâmbetul tău!",
+    "desc": "Echipa noastră de medici specialiști este dedicată să ofere cele mai bune tratamente dentare, combinând experiența cu tehnologia de ultimă generație. Fiecare pacient este tratat cu atenție și profesionalism.",
+    "btn": "Fă cunoștință cu medicii noștri"
+  },
+  "stats": {
+    "patients": "Pacienți",
+    "doctors": "Medici specialiști",
+    "years": "Ani de excelență",
+    "success": "Rată de succes sau intervenții fără durere"
+  },
+  "contact": {
+    "title": "Programează o consultație",
+    "desc": "Completează formularul de mai jos și echipa noastră te va contacta pentru a stabili o programare convenabilă.",
+    "name": "Nume",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Mesaj",
+    "btn": "Trimite"
+  },
+  "nav": {
+    "echipa": "Echipa",
+    "servicii": "Servicii",
+    "avantaje": "Avantaje",
+    "contact": "Contact"
+  },
+  "services": {
+    "offers": "Oferte",
+    "prices": "Prețuri",
+    "bookBtn": "Programează-te",
+    "colService": "Serviciu",
+    "colPrice": "Preț"
+  },
+  "burger": {
+    "echipa": "Echipa",
+    "servicii": "Servicii",
+    "avantaje": "Avantaje",
+    "harta": "Hartă",
+    "consultatie": "Consultație",
+    "preturi": "Prețuri",
+    "contact": "Contact"
+  },
+  "footer": {
+    "info": "Informații",
+    "general": "General",
+    "contacts": "Contacte",
+    "rights": "Toate drepturile rezervate.",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții",
+    "cookies": "Politica cookie",
+    "security": "Politica de securitate",
+    "accreditation": "Certificat de acreditare",
+    "services": "Servicii",
+    "offers": "Oferte",
+    "prices": "Prețuri",
+    "doctors": "Doctori"
+  },
+  "booking": {
+    "title": "Programare online",
+    "desc": "Completați formularul pentru a vă programa la clinică",
+    "doctor": "Doctor",
+    "procedure": "Procedura",
+    "date": "Dată",
+    "time": "Timp",
+    "name": "Nume complet",
+    "phone": "Telefon",
+    "email": "Email",
+    "message": "Mesaj",
+    "messageOptional": "(opțional)",
+    "policy1": "Sunt de acord cu politica de anulare a clinicii.",
+    "policy2": "Sunt de acord cu politica de confidențialitate.",
+    "btn": "Trimite programarea",
+    "chooseDate": "Alege data",
+    "chooseTime": "Alege ora",
+    "chooseDateFirst": "Alege data mai întâi",
+    "noSlots": "Nu sunt ore libere",
+    "error": "Acest slot este deja ocupat. Alegeți altă oră.",
+    "messagePlaceholder": "Descrieți pe scurt problema..."
+  },
+  "gallery": {
+    "title": "Galerie"
+  },
+  "offers": {
+    "bookBtn": "Programează-te",
+    "offer1": { "title": "Pachet Igienizare Profesională Completă (Profilaxie)", "desc": "Ce include: Detartraj cu ultrasunete, periaj profesional și sablare (Air-Flow) pentru îndepărtarea petelor." },
+    "offer2": { "title": "Pachet Estetic: Albire Dentară Profesională", "desc": "Ce include: Igienizare completă, ședință de albire cu lampă LED (rezultate vizibile pe loc)." },
+    "offer3": { "title": "Pachet Urgență & Restaurare: Plombă (Obturaţie) Premium", "desc": "Ce include: Consultație, anestezie locală și obturaţie fizionomică din compozit de ultimă generație." },
+    "offer4": { "title": "Pachet Implant Dentar „Zâmbet Complet", "desc": "Ce include: Implant dentar de înaltă calitate + bont protetic (faza chirurgicală primară) și plan de tratament digital." },
+    "offer5": { "title": "Pachet Estetică Top: Fațetă Dentară E-MAX", "desc": "Ce include: Consultație estetică, simulare digitală (Digital Smile Design) și aplicarea unei fațete ceramice premium." }
+  },
+  "services_carousel": {
+    "title": "Serviciile noastre:",
+    "service1": { "title": "Estetică Dentară & Albire", "desc": "Albire profesională și fațete premium pentru un zâmbet strălucitor și natural." },
+    "service2": { "title": "Implantologie & Chirurgie", "desc": "Înlocuirea sigură și permanentă a dinților lipsă cu implanturi de top." },
+    "service3": { "title": "Stomatologie pentru Copii", "desc": "Vizite fără frică într-un cadru ludic, adaptat special pentru zâmbetul lor." },
+    "service4": { "title": "Prevenție & Igienizare", "desc": "Detartraj profesional și consultații preventive pentru o sănătate orală de durată." }
+  },
+  "doctors": {
+    "infoBtn": "Informează-te",
+    "bookBtn": "Programează-te",
+    "procedures": "De ce proceduri se ocupă în cadrul clinicii?",
+    "cta": "Vrei o schimbare?"
+  },
+  "header": {
+    "days": "LUN - VIN",
+    "hours": "9:00 - 17:00"
+  },
+  "prices": {
+    "from": "de la",
+    "perTooth": "/ dinte",
+    "cat1": {
+      "title": "Diagnostic și Prevenție",
+      "s1": "Consultație primară + Plan de tratament",
+      "s2": "Radiografie retroalveolară / digitală",
+      "s3": "Pachet Igienizare Completă (Detartraj, Periaj, Airflow)",
+      "s4": "Fluorizare profesională (ambele arcade)"
+    },
+    "cat2": {
+      "title": "Odontologie (Tratamentul Cariilor)",
+      "s1": "Obturație fizionomică (Plombă) - suprafață mică",
+      "s2": "Obturație fizionomică (Plombă) - cavitate medie/mare",
+      "s3": "Reconstrucţie dinte cu pivot din fibră de sticlă",
+      "s4": "Coafaj direct/indirect (protecţia pulpei la carii adânci)"
+    },
+    "cat3": {
+      "title": "Endodonție (Tratamente de Canal)",
+      "s1": "Tratament endodontic monoradicular (1 canal)",
+      "s2": "Tratament endodontic biradicular (2 canale)",
+      "s3": "Tratament endodontic pluriradicular (3-4 canale)",
+      "s4": "Retratament endodontic (despobturare și dezinfectare canal)"
+    },
+    "cat4": {
+      "title": "Chirurgie și Implantologie",
+      "s1": "Extracție dinte monoradicular / simplă",
+      "s2": "Extracție molar de minte (inclus sau semi-inclus)",
+      "s3": "Implant Dentar (partea chirurgicală, brand standard)",
+      "s4": "Adiție de os / Sinus Lift (procedură de chirurgie osoasă)"
+    },
+    "cat5": {
+      "title": "Protetică și Estetică Dentară",
+      "s1": "Coroană metalo-ceramică",
+      "s2": "Coroană zirconiu (fizionomie premium)",
+      "s3": "Fațetă ceramică (E-max)",
+      "s4": "Albire profesională în cabinet (cu lampă LED)"
+    }
+  },
+  "about": {
+    "title": "Bun venit la Dentistry – Zâmbetul tău, priorititatea noastră!",
+    "p": "La Dentistry, credem că un zâmbet sănătos are puterea de a schimba vieți. De aceea, am creat mai mult decât o clinică dentară – am construit un spațiu primitor, modern și complet digitalizat, unde sănătatea ta orală este pe mâini sigure. Echipa noastră de medici specialiști combină experiența medicală cu tehnologia de ultimă generație pentru a-ți oferi tratamente personalizate, complet lipsite de durere. Indiferent dacă ai nevoie de o simplă igienizare, de estetică dentară sau de intervenții complexe de chirurgie și implantologie, la noi găsești soluții eficiente, adaptate nevoilor și stilului tău de viață. De ce să alegi Dentistry? Tehnologie de vârf: Diagnostic precis și tratamente rapide datorită aparaturii de ultimă oră. Confort absolut: Ne asigurăm că fiecare vizită este o experiență relaxantă și fără stres. Echipă dedicată: Medici pasionați, pregătiți să îți asculte dorințele și să îți ofere cele mai bune recomandări. Zâmbește cu încredere în fiecare zi! Te așteptăm la Dentistry pentru a începe împreună călătoria către un zâmbet perfect și sănătos."
+  }
+}

@@ -3,8 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Carousel from './components/CarouselServices'
 import InfoBox from './components/InfoBox'
+import { useTranslations } from 'next-intl'
 
 export default function Home() {
+  const t = useTranslations()
+
   return (
     <main>
       <section
@@ -13,25 +16,23 @@ export default function Home() {
       >
         <div className="relative z-10 max-w-2xl px-8 md:px-16 py-16 md:py-32">
           <h1 className="text-3xl md:text-4xl font-bold text-[#8900F2] mb-4">
-            Zâmbetul tău merită cea mai bună îngrijire!
+            {t('hero.title')}
           </h1>
           <p className="text-gray-800 text-base md:text-lg mb-8">
-            Clinica noastră este un spațiu modern, dedicat excelenței în medicina dentară, având o echipă de medici specialiști pasionați și tehnologie de ultimă generație. Ne asigurăm că fiecare vizită este complet fără durere, sigură și confortabilă pentru tine și familia ta.
+            {t('hero.desc')}
           </p>
           <Link href="/about" className="bg-[#8900F2] hover:bg-[#7000cc] text-white text-lg md:text-xl font-semibold px-8 md:px-12 py-4 md:py-5 rounded-2xl transition-colors cursor-pointer">
-            Vezi mai mult...
+            {t('hero.btn')}
           </Link>
         </div>
       </section>
 
       <section id="echipa" className="py-16 flex flex-col md:flex-row gap-8 mx-auto max-w-6xl px-4">
         <div className="text-white bg-[#8900F2] p-8 md:p-16 rounded-2xl w-full md:w-1/2 flex flex-col justify-center gap-5">
-          <h1 className="text-3xl md:text-4xl font-bold">Echipa care are grijă de zâmbetul tău!</h1>
-          <p className="text-base md:text-lg mt-4">
-            Echipa noastră de medici specialiști este dedicată să ofere cele mai bune tratamente dentare, combinând experiența cu tehnologia de ultimă generație. Fiecare pacient este tratat cu atenție și profesionalism, asigurându-ne că fiecare vizită este o experiență pozitivă și confortabilă.
-          </p>
+          <h1 className="text-3xl md:text-4xl font-bold">{t('team.title')}</h1>
+          <p className="text-base md:text-lg mt-4">{t('team.desc')}</p>
           <Link href="/doctors" className="mt-4 md:mt-8 bg-white text-[#8900F2] font-semibold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-2xl hover:bg-gray-100 transition-colors cursor-pointer text-center">
-            Fă cunoștință cu medicii noștri
+            {t('team.btn')}
           </Link>
         </div>
         <div className="w-full md:w-1/2 relative min-h-[400px] md:min-h-[700px]">
@@ -44,10 +45,10 @@ export default function Home() {
       </section>
 
       <section id="avantaje" className="py-16 px-4 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
-        <InfoBox title="Pacienți" value={10000} suffix="+"><Users className="w-12 h-12" strokeWidth={1.5} /></InfoBox>
-        <InfoBox title="Medici specialiști" value={10} suffix="+"><Hospital className="w-12 h-12" strokeWidth={1.5} /></InfoBox>
-        <InfoBox title="Ani de excelență" value={14}><Hourglass className="w-12 h-12" strokeWidth={1.5} /></InfoBox>
-        <InfoBox title="Rată de succes sau intervenții fără durere" value={100} suffix="%"><ShieldCheck className="w-12 h-12" strokeWidth={1.5} /></InfoBox>
+        <InfoBox title={t('stats.patients')} value={10000} suffix="+"><Users className="w-12 h-12" strokeWidth={1.5} /></InfoBox>
+        <InfoBox title={t('stats.doctors')} value={10} suffix="+"><Hospital className="w-12 h-12" strokeWidth={1.5} /></InfoBox>
+        <InfoBox title={t('stats.years')} value={14}><Hourglass className="w-12 h-12" strokeWidth={1.5} /></InfoBox>
+        <InfoBox title={t('stats.success')} value={100} suffix="%"><ShieldCheck className="w-12 h-12" strokeWidth={1.5} /></InfoBox>
       </section>
 
       <section id="map" className="py-16 px-4 bg-[#8900F2]">
@@ -85,17 +86,15 @@ export default function Home() {
 
       <section id="consultatie" className="bg-[#8900F2] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-white text-2xl md:text-3xl font-bold mb-4">Programează o consultație</h2>
-          <p className="text-white text-base md:text-lg mb-8">
-            Completează formularul de mai jos și echipa noastră te va contacta pentru a stabili o programare convenabilă.
-          </p>
+          <h2 className="text-white text-2xl md:text-3xl font-bold mb-4">{t('contact.title')}</h2>
+          <p className="text-white text-base md:text-lg mb-8">{t('contact.desc')}</p>
           <form className="flex flex-col gap-4">
-            <input type="text" placeholder="Nume" className="p-4 rounded-lg bg-white" />
-            <input type="email" placeholder="Email" className="p-4 rounded-lg bg-white" />
-            <input type="tel" placeholder="Telefon" className="p-4 rounded-lg bg-white" />
-            <textarea placeholder="Mesaj" className="p-4 rounded-lg bg-white" rows={4} />
+            <input type="text" placeholder={t('contact.name')} className="p-4 rounded-lg bg-white" />
+            <input type="email" placeholder={t('contact.email')} className="p-4 rounded-lg bg-white" />
+            <input type="tel" placeholder={t('contact.phone')} className="p-4 rounded-lg bg-white" />
+            <textarea placeholder={t('contact.message')} className="p-4 rounded-lg bg-white" rows={4} />
             <button type="submit" className="bg-white text-[#8900F2] font-semibold text-lg px-8 py-4 rounded-2xl hover:bg-gray-100 transition-colors cursor-pointer">
-              Trimite
+              {t('contact.btn')}
             </button>
           </form>
         </div>

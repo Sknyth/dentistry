@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Calendar } from '@/components/ui/calendar'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { useTranslations } from 'next-intl'
 
 const generateTimeSlots = () => {
   const slots = []
@@ -26,6 +27,7 @@ interface Props {
 }
 
 export default function TimePicker({ bookedSlots = [], onDateChange, onTimeChange }: Props) {
+  const t = useTranslations('booking')
   const [open, setOpen] = React.useState(false)
   const [date, setDate] = React.useState<Date | undefined>(undefined)
   const [time, setTime] = React.useState<string | undefined>(undefined)
@@ -67,12 +69,12 @@ export default function TimePicker({ bookedSlots = [], onDateChange, onTimeChang
   return (
     <div className="flex flex-row gap-4 w-full">
       <div className="flex flex-col gap-1.5 flex-1">
-        <label htmlFor="date-picker" className="text-sm font-medium text-gray-700">Dată</label>
+        <label htmlFor="date-picker" className="text-sm font-medium text-gray-700">{t('date')}</label>
         <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger asChild>
             <Button variant="outline" id="date-picker"
               className="w-full justify-between font-normal border-[#8900F2]/40 hover:border-[#8900F2]">
-              {date ? format(date, 'dd.MM.yyyy') : 'Alege data'}
+              {date ? format(date, 'dd.MM.yyyy') : t('chooseDate')}
               <ChevronDownIcon />
             </Button>
           </PopoverTrigger>
@@ -90,14 +92,14 @@ export default function TimePicker({ bookedSlots = [], onDateChange, onTimeChang
       </div>
 
       <div className="flex flex-col gap-1.5 flex-1">
-        <label htmlFor="time-picker" className="text-sm font-medium text-gray-700">Timp</label>
+        <label htmlFor="time-picker" className="text-sm font-medium text-gray-700">{t('time')}</label>
         <Select disabled={!date} value={time} onValueChange={handleTimeChange}>
           <SelectTrigger id="time-picker" className="w-full border-[#8900F2]/40 hover:border-[#8900F2]">
-            <SelectValue placeholder={date ? 'Alege ora' : 'Alege data mai întâi'} />
+            <SelectValue placeholder={date ? t('chooseTime') : t('chooseDateFirst')} />
           </SelectTrigger>
           <SelectContent>
             {availableSlots.length === 0 ? (
-              <p className="px-4 py-2 text-sm text-muted-foreground">Nu sunt ore libere</p>
+              <p className="px-4 py-2 text-sm text-muted-foreground">{t('noSlots')}</p>
             ) : (
               availableSlots.map(slot => (
                 <SelectItem key={slot} value={slot}>{slot}</SelectItem>
